@@ -7,14 +7,22 @@ body {
   padding: 0;
   font-family:'Space Grotesk', sans-serif;
 }
+.logo img{
+  width:70px;
+  height: 70px;
+  border-radius: 48%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3),
+  0 0 25px rgba(120,140,255,0.5);
+
+}
 
 /*For my images to fit the any type of screen*/
 img{
-  width: 100%;
-  max-width: 400px;
-  height: 250px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
   display: block;
+
 }
 html, body{
  overflow-x:hidden;
@@ -27,13 +35,20 @@ p{
  font-size: large;
 }
 
+
 /*For my unordered lists and ordered lists*/
 ul{
  width:80%;
  padding:4px;
  background-color:rgba(15, 23, 41, 0.9);
  margin:20px auto;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: "Space Grotesk", sans-serif;
+ font-size: large;
+}
+
+li{
+  margin:20px auto;
+ font-family: "Space Grotesk", sans-serif;
  font-size: large;
 }
 
@@ -46,23 +61,26 @@ ol{
  font-size: large; 
 }
 nav{
-  padding:25px;
+  padding:20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color:rgba(15, 23, 41, 0.9);
-  gap: 50px;
+  gap: 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  flex-wrap: wrap;
 }
+
 /*for my navigation bar*/
 nav a {
   color:white;
   text-decoration: none;
-  font-size: 1rem;
-  transition: 0.3s;
+  padding: 10px 15px;
+ 
 }
 
 nav a:hover{
@@ -71,7 +89,6 @@ nav a:hover{
 }
 /*for my big headings*/
 h1{
-  display: ruby;
   color:aliceblue;
   text-shadow: 0 0 10px #050c46, 0 0 20px #ae9dca;
   font-size: 50px;
@@ -79,7 +96,6 @@ h1{
 }
 
 h2 {
-  display: ruby;
   color: #f4f5f7;  
   text-shadow:0 0 20px #050c46, 0 0 40px #ae9dca ;
   font:large;
@@ -87,8 +103,8 @@ h2 {
 }
 
 h3{
-display: ruby;
-  color: #b19cd9;
+
+  color: aliceblue;
   text-shadow:0 0 20px #050c46, 0 0 40px #a388d1 ;
   font: large;
   font-family: sans-serif;
@@ -147,19 +163,17 @@ box-shadow: 0 0 22px rgba(90, 185, 255, 0.35);
   line-height: 1.8;
 
 }
-.hero-image{
+.heroimage{
   flex: 1;
   min-width: 300px;
+  position: relative;
 }
-.hero-image img {
-  width: 100%;
-  border-radius: 25px;
-  box-shadow: 0 0 30px rgba(100, 120, 255, 0.1);
-  max-width: 450px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  display: block;
+.heroimage img {
+  border-radius: 50px;
+  opacity: .9;
 
 }
+
 .facts-section{
   display: flex;
   gap: 30px;
@@ -167,33 +181,59 @@ box-shadow: 0 0 22px rgba(90, 185, 255, 0.35);
   flex-wrap: wrap;
   align-items: stretch;
 }
-.factscard, .tabcontent{
- background: rgba(9, 15, 35, 0.8);
- border: 1px solid rgba(255,255,255, 0.1);
- border-radius: 25px;
- padding: 30px;
- box-shadow: 0 0 25px rgba(100, 120, 255, 0.08);
- transition:0.3s ease;
+.feature-cards{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 60px 0;
 }
-.factscard:hover{
-  transform:translateY(-5px);
-  box-shadow: 0 0 35px rgba(120, 130, 255, 0.15);
+.feature-card{
+  width: 320 px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(15, 23, 41, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
+  transition: 0.3s;
 }
-.tabcontent{
-  transform:translateY(-5px);
-  box-shadow: 0 0 35px rgba(120, 130, 255, 0.15);
+.feature-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(90, 185, 255, 0.25) ;
 }
-.factscard{
-  width: 300px;
+.feature-card h2{
+  margin-bottom: 15px;
 }
-.tabcontent{
-  flex: 1;
-  min-width: 300px;
+.feature-card p{
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.feature-card a{
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #13205f;
+  color: white;
+  text-decoration: none;
+}
+.feature-card a:hover{
+  background: #1b2b5a;
 }
 .container2{
   width: 90%;
   max-width: 1300px;
   margin: auto;
+}
+.learnbutton{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background:#13205f;
+  color: white;
+  text-decoration: none;
+}
+.learnbutton:hover{
+  background: #1b2b5a;
 }
 /*THE BUTTONS*/
 .tab{
@@ -217,34 +257,74 @@ box-shadow: 0 0 22px rgba(90, 185, 255, 0.35);
 
 /*Footer*/
 footer{
-  text-align: center;
-  padding: 50px;
-  background-color: #050816;
-  margin-top: 40px;
+  background: #00051a;
+  padding: 70px 10%;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 40px;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-brand img{
+  width: 80px;
+  margin-bottom: 15px;
+}
+.footer-links a{
+  text-decoration: none;
+  color: #d7dcff;
+
+}
+.footer-links a:hover{
+  color: white;
+}
+.footer hr{
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
 }
 footer h2{
   text-align: left;
 }
 /*TO MAKE SURE IT IS ALL RESPONSIVE*/
-@media(max-width:7768px){
+@media(max-width:768px){
 .herotext h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .hero{
   padding: 30px;
+  flex-direction: column;
+  text-align: center;
 }
 .facts-section{
   padding: 20px;
 }
+nav{
+  flex-direction: column;
+  gap: 10px;
+}
+.heroimage img{
+ width: 100%;
+ max-width: 350px;
+ margin: auto;
+}
+
 }
   
 
 /*ALL MY PSEUDOCLASSES*/
 .specPic{
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-  display: block;
+   margin:auto;
+   display: block;
+   max-width: 100%;
+   height: auto;
+ 
+ 
 }
 
 .imgBigbang{
@@ -279,6 +359,8 @@ footer h2{
 /*Style icon*/
 .iconbar{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   align-items: center;
 }
@@ -365,6 +447,400 @@ footer h2{
   font-size: 30px;
 }
 
+/*FOR THE STARS*/
+#starsCanvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  background: #050816;
+}
+body, main, nav {
+  position: relative;
+  z-index: 1;
+}
 
-/*then this is for the side bar*/
+.stars{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+}
 
+.stars::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    20px 30px white,
+    50px 80px white,
+    120px 200px white,
+    300px 400px white,
+    500px 600px white,
+    700px 100px white,
+    900px 300px white,
+    1100px 500px white,
+    1300px 200px white,
+    1500px 700px white,
+    200px 900px white,
+    400px 1000px white;
+  animation: starsMove 120s linear infinite;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow:
+  80px 120px white,
+  250px 300px white,
+   600px 450px white,
+  1000px 700px white,
+ 1400px 900px white;
+  animation: starsMove 200s linear  infinite;
+  opacity: 0.7;
+}
+
+@keyframes starsMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1000px); }
+}
+
+/*MODIFYING THE QUIZ SECTION USING A PSEUDOCLASS*/
+.quiz-card{
+  width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgb(15, 23, 41, 0.9);
+  border: 1px solid rgba (255,255,255,0.08);
+  box-shadow: 0 0 15px rgba(90, 185, 255, 0.12);
+}
+.quiz-card:hover{
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+.quiz-hero{
+  text-align: center;
+  margin: 40px 0;
+}
+.quiz-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 40px;
+}
+.quiz-question{
+  color: #d7dcff;
+}
+.challenge{
+  width: 80%;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 30 px auto;
+  border-radius: 20px;
+  background: rgba(20, 20, 70, 0.9);
+}
+.newstitle{
+  text-align: center;
+  margin-top: 40px;
+}
+.newssubtitle{
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.newscontainer{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.newscard{
+  background: rgba(15, 23, 41, 0.9);
+  border: 1px solid rgba (255,255,255,0.08);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(90, 185, 255, 0.12) ;
+}
+.newscard:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(90, 185, 255, 0.25);
+}
+.newscard h3{
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+}
+.newscard p{
+  margin: 0;
+  line-height: 1.8;
+}
+.newsimg img{
+ width: 100%;
+ max-width: 350px;
+ margin: auto;
+}
+
+/*TO MODIFY THE ABOUT PAGE*/
+.aboutpage{
+  width: 90%;
+  max-width: 1200px;
+  margin: 5% auto;
+  padding: 5px;
+  border-radius: 20px;
+  background: rgba(15,23, 41, 0.6);
+  border: 1px solid  rbga rgba(255,255,255,0.08);
+  box-shadow:  0 0 20px rgba(90, 185, 255, 0.08);
+  animation: fadeIn 0.6s ease-in;
+}
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+   to{
+    opacity: 1;
+    transform: translateY(0);
+   }
+ }
+.aboutpage h2{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/*HISTORY*/
+.historycontainer{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.historytext{
+  flex: 1;
+  min-width: 300px;
+}
+.historytext p{
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0;
+  color: #d7dcff;
+}
+.historyimg{
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.historytext img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+.historytext img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(90, 185, 255, 0.25);
+}
+/*VISION*/
+.visioncontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+}
+.visionbox, .missionbox{
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(20, 28, 60, 0.8);
+  border: 1px solid rgba(120, 140, 255, 0.2);
+  transition: 0.3s ease;
+}
+.visionbox h2, .missionbox h2{
+ margin-top: 0;
+ font-size: 1.8rem;
+ margin-bottom: 20px;
+}
+.visionbox p, .missionbox p{
+  margin: 0;
+  line-height: 1.7;
+  color: #d7dcff;
+}
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+.team-card{
+  background: rgba(3, 9, 36, 0.9);
+  border: 1px solid rgba(14, 24, 82, 0.2);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(14, 24, 109, 0.973);
+}
+.team-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(10, 21, 82, 0.993);
+  border-color: rgba(3, 11, 58, 0.884);
+}
+.team-image{
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(120, 140, 255, 0.1), rgba(5, 3, 78, 0.1));
+}
+.team-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.team-card:hover .team-image img{
+  transform: scale(1.08);
+}
+.team-info{
+  padding: 30px;
+}
+.team-info h3{
+  margin: 0 0 10px 0;
+  font-size: 1.6rem;
+  color:  #f4f5f7;
+  text-shadow: 0 0 10px rgba(120, 140, 255, 0.3);
+}
+.team-title{
+  color: #b19cd9;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+.team-bio{
+  color: #d7dcff;
+  line-height: 1.6;
+  margin: 0 0 15px 0;
+  font-size: 0.95rem;
+}
+.team-email{
+  color: #7a88d9;
+  margin:  0 0 20px 0;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+.button{
+ width: 100%;
+ padding: 12px;
+ background: linear-gradient(135deg, #13205f,#1b2b5a);
+ color: white;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
+ font-size: 1rem;
+ font-weight: bold;
+ transition: 0.3s ease;
+ margin: 0;
+}
+.button:hover{
+  background: linear-gradient(135deg,#1b2b5a ,#243d7a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(90, 185, 255, 0.3);
+}
+.members-avatars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid rgba(120, 140, 255, 0.3);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.avatar:hover{
+  transform: scale(1.15);
+  border-color: rgba(120, 140, 255, 0.8);
+  box-shadow: 0 0 20px rgba(90,185,255, 0.4);
+}
+
+/*FOR RESPONSIVE DESIGN*/
+@media(max-width: 786px){
+ .aboutpage{
+  margin: 30px auto;
+  padding: 25px;
+ }
+
+ .aboutpage h2{
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+ }
+
+ .historycontainer{
+  gap: 30px;
+  flex-direction: column;
+ }
+
+ .visioncontainer{
+  grid-template-columns: 1fr;
+  gap: 25px;
+ }
+ .team-container{
+  grid-template-columns: 1fr;
+  gap: 30px;
+ }
+ .team-info{
+  padding: 20px;
+ }
+ .members-avatars{
+  gap: 15px;
+ }
+ .avatar{
+  width:60px;
+  height: 60px;
+ }
+}
+
+@media(max-width: 480px){
+ .aboutpage{
+  margin: 20px auto;
+  padding: 15px;
+ }
+ .aboutpage h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+ }
+ .historytext p{
+  font-size: 0.95rem;
+ }
+ .team-info h3{
+  font-size: 1.3rem;
+ }
+ .button{
+  padding: 10px;
+  font-size: 0.9rem;
+ }
+ .avatar{
+  width: 50px;
+  height: 50px;
+ }
+}

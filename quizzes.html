@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css.assets/infoscience.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
+<!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
   <nav>
+     <div class="logo">
+      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+    </div>
     <a href="home.html">Home</a>
     <a href="infoscience.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
@@ -18,10 +23,19 @@
     <a href="about.html">About</a>
   </nav>
 
-  <h1>Test your knowledge!</h1>
+  <section class="challenge">
+
+    <h2>Space challenge!</h2>
+    <p>
+      Can you score 10/10 and prove you're a space genius?
+    </p>
+  </section>
+  <div class="quiz-hero">
   <img src = "images/robynne-o-HOrhCnQsxnQ-unsplash.jpg" alt  = "Tech lights" width = 400 height = 300>
+  </div>
   <!--BLACK HOLE QUIZ-->
-  <h2>What is a Black hole </h2>
+  <div class="quiz-card">
+  <h2 class="quiz-question">What is a Black hole </h2>
   <ul>
   <li>A giant planet</li>
   <li>A region with gravity so strong nothing escapes</li>
@@ -33,7 +47,7 @@
 	<p>B.A region with gravity so strong nothing escapes</p>
   </details>
   
-  <h2>What forms most black holes?</h2>
+  <h2 class="quiz-question">What forms most black holes?</h2>
   <ul>
   <li>Exploding planets</li>
   <li>Collapse massive stars</li>
@@ -45,7 +59,7 @@
   </details>
   
 <!--Exoplanets-->
-  <h2>What is an exoplanet?</h2>
+  <h2 class="quiz-question">What is an exoplanet?</h2>
   <ul>
   <li>A planet in our solar system</li>
   <li>A planet outside our solar system</li>
@@ -56,7 +70,7 @@
 	<p>B.A planet outside our solar system</p>
   </details>
 
-  <h2>How do scientists often detect exoplanets?</h2>
+  <h2 class="quiz-question">How do scientists often detect exoplanets?</h2>
   <ul>
   <li>By touching them</li>
   <li>By observing star light changes</li>
@@ -68,7 +82,7 @@
   </details>
   
 <!--Astrobiology-->
- <h2>What is an exoplanet?</h2>
+ <h2 class="quiz-question">What is an exoplanet?</h2>
   <ul>
   <li>A planet in our solar system</li>
   <li>A planet outside our solar system</li>
@@ -80,7 +94,7 @@
   </details>
 
   <!--More random quizzes-->
-  <h2>What is one reason exoplanets are difficult to detect?</h2>
+  <h2 class="quiz-question">What is one reason exoplanets are difficult to detect?</h2>
   <ul>
     <li>A.They are too cold</li>
     <li>B.They are extremely bright</li>
@@ -91,7 +105,7 @@
     <p>C.They are far away and too hard to see</p>
   </details>
 
-    <h2>Which method detects a planet when a star becomes slightly dimmer?</h2>
+    <h2 class="quiz-question">Which method detects a planet when a star becomes slightly dimmer?</h2>
   <ul>
     <li>A.Transit method</li>
     <li>B.Direct imaging</li>
@@ -102,7 +116,7 @@
     <p>A.Transit method</p>
   </details>
 
-    <h2>In the transit method, what happens when a planet passes in front of a star?</h2>
+    <h2 class="quiz-question">In the transit method, what happens when a planet passes in front of a star?</h2>
   <ul>
     <li>A.The star explodes</li>
     <li>B.The star becomes slightly dimmer</li>
@@ -113,7 +127,7 @@
     <p>>B.The star becomes slightly dimmer</p>
   </details>
 
-    <h2>Which method is described as the most famous method?</h2>
+    <h2 class="quiz-question">Which method is described as the most famous method?</h2>
   <ul>
     <li>A.</li>
     <li>B.</li>
@@ -124,7 +138,7 @@
     <p></p>
   </details>
 
-    <h2>What causes a star to wobble in the radial velocity method?</h2>
+    <h2 class="quiz-question">What causes a star to wobble in the radial velocity method?</h2>
   <ul>
     <li>A.</li>
     <li>B.</li>
@@ -135,7 +149,7 @@
     <p></p>
   </details>
 
-    <h2>Which scientific effect helps detect the wobbling of a star?</h2>
+    <h2 class="quiz-question">Which scientific effect helps detect the wobbling of a star?</h2>
   <ul>
     <li>A.</li>
     <li>B.</li>
@@ -146,7 +160,7 @@
     <p></p>
   </details>
 
-    <h2>The radial velocity method helps scientists determine a planet’s:</h2>
+    <h2 class="quiz-question">The radial velocity method helps scientists determine a planet’s:</h2>
   <ul>
     <li>A.Colour and temperature</li>
     <li>B. Mass and orbit</li>
@@ -157,7 +171,7 @@
     <p>B. Mass and orbit</p>
   </details>
 
-    <h2>Which method is considered quite rare?</h2>
+    <h2 class="quiz-question">Which method is considered quite rare?</h2>
   <ul>
     <li>A.Transit method</li>
     <li>B.Direct imaging</li>
@@ -168,7 +182,7 @@
     <p>B.Direct imaging</p>
   </details>
 
-    <h2>Direct imaging is mostly used for:</h2>
+    <h2 class="quiz-question">Direct imaging is mostly used for:</h2>
   <ul>
     <li>A.Tiny rocky planets</li>
     <li>B.Giant planets</li>
@@ -179,7 +193,7 @@
     <p>B.Giant planets</p>
   </details>
 
-    <h2>What does gravitational microlensing use as a lens?</h2>
+    <h2 class="quiz-question">What does gravitational microlensing use as a lens?</h2>
   <ul>
     <li>A.Water</li>
     <li>B.Gravity</li>
@@ -189,10 +203,93 @@
     <summary>Reveal answer</summary>
     <p>B.Gravity</p>
   </details>
+  </div>
  
    <footer>
-    <p>© 2026 Lumen-Stellar.Explore the universe </p>
+     <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+          <h2>Lumen-Stellar</h2>
+          <p>
+            Explore planets, galaxies and the mysteries of the universe.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="infoscience.html">Explore</a>
+            <a href="quizzes.html">Quizzes</a>
+        </div>
+
+        <div class="footer-links" >
+          <h3>Resources:</h3>
+           <a href="news.html">News</a>
+           <a href="enquiries.html">Enquiries</a>
+           <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-links">
+         <h3>Connect</h3>
+         <div class="iconbar">
+           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="google"><i class="fa fa-google"></i></a>
+           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+         </div>
+        </div>
+      </div>
+      <hr>
+    <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
   </footer>
- 
+<!--ADDING THE JAVASCRIPT FOR THE STARS-->
+<script>
+const canvas = document.getElementById("starsCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+const STAR_COUNT = 200;
+
+//CREATING THE STARS
+ for (let i = 0;i < STAR_COUNT; i++) {
+  stars.push({
+    x:Math.random()* canvas.width,
+    y:Math.random()*canvas.height,
+    radius:Math.random()*1.5,
+    speed:Math.random()*0.5 + 0.2
+  })
+ }
+ function animate(){
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "white";
+
+  for (let i = 0; i < stars.length;i++){
+    let s = stars[i];
+
+    ctx.beginPath();
+    ctx.arc(s.x,s.y, s.radius,0, Math.PI * 2);
+    ctx.fill();
+
+
+ s.y += s.speed;
+  if (s.y > canvas.height) {
+    s.y = 0;
+    s.x = Math.random() * canvas.width;
+  } 
+} 
+ requestAnimationFrame(animate);
+}
+ animate();
+ //
+ window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+ });
+</script>  
 </body>
 </html>

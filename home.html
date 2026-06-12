@@ -4,23 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Space Hub</title>
-  <link rel="stylesheet" href="css.assets/infoscience.css ">
+  <link rel="stylesheet" href="css.assets/infoscience.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com crossorigin">
-  <link rel="sylesheet"  href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
+  <!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
    
 <!--Navigation bar-->
   <nav>
+    <div class="logo">
+      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+    </div>
+
     <a href="home.html">Home</a>
     <a href="infoscience.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
     <a href="news.html">News</a>
     <a href="enquiries.html">Enquiries</a>
     <a href="about.html">About</a>
+    
   </nav>
   <main>
     <!--WRAPPING THE HERO SECTION-->
@@ -34,58 +42,135 @@
   </div>
   <div class="heroimage">
   <img src = "images/Hero-shot NASA.jpg" alt  = "An astronaut" >
+
   </div>
 
+  <a href="infoscience.html" class="learnbutton">Learn more</a>
+
+   
     </section>
 
 <!--Grouping my work--> 
-    <section class="facts">
-    <div class="factscard">  
-<h2>Mind blowing galactic facts!</h2>
-<!--Tab links-->
-<div class="tab">
-  <button class="tablinks">Mind-Bending truths!</button>
-  <button class="tablinks">Extreme weather and time!</button>
-</div>
-    </div>
+ <section class="feature-cards">
+   <div class="feature-card">
+    <h2>Celestial bodies</h2>
+    <p>
+      Explore planets, stars, galaxies and other fascinating 
+      objects through objects the universe
+    </p>
+    <a href="infoscience.html">Explore</a>
+   </div>
 
-<!--Tab content-->
-<div id="Mind-Bending truths!" class="tabcontent">
-  <h2>Mind-Bending truths!</h2>
-  <ul>
-    <li>We are made of star stuff: Imagine humans made of pixie dust!</li>
-    <li>Space is not 100% silent as people may think it is!</li>
-    <li>Everything you know about space is just a tiny fraction. That is how vast our universe really is!</li>
-  </ul>
-</div>
+   <div class="feature-card">
+    <h2>Space Mission</h2>
+    <p>
+      Learn about the past, the present and the future missions that 
+      continue expanding humanity's reach into space.
+    </p>
+    <a href="news.html">Learn more</a>
+   </div>
 
-<div id="Extreme weather and time!" class="tabcontent">
-  <h2>Extreme weather and time!</h2>
-  <ul>
-    <li>We are on a crahs course with a neighbouring galaxy: Adromeda Galaxy!</li>
-    <li>Cosmic time travel: This one is crazy, because of speed of light being finite, looking at distand objects in space is like looking at the past</li>
-  </ul>
-</div>
-</section>
-</div>
+   <div class="feature-card">
+    <h2>Latest news</h2>
+    <p>
+      Stay updated with the latest discoveries 
+      and astronomical events.
+    </p>
+    <a href="news.html">Read news</a>
+   </div>
+
+ </section>
 <!--THE BUTTONS END HERE!-->
 
 </main>
 
     <footer>
-    <p>� 2026 Lumen-Stellar. Explore the universe </p>
-<h2>Hit us up on our socials</h2>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="iconbar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="google"><i class="fa fa-google"></i></a>
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-  </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+          <h2>Lumen-Stellar</h2>
+          <p>
+            Explore planets, galaxies and the mysteries of the universe.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="infoscience.html">Explore</a>
+            <a href="quizzes.html">Quizzes</a>
+        </div>
+
+        <div class="footer-links" >
+          <h3>Resources:</h3>
+           <a href="news.html">News</a>
+           <a href="enquiries.html">Enquiries</a>
+           <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-links">
+         <h3>Connect</h3>
+         <div class="iconbar">
+           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="google"><i class="fa fa-google"></i></a>
+           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+         </div>
+        </div>
+      </div>
+      <hr>
+    <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
   </footer>
 
- 
+<!--ADDING THE JAVASCRIPT FOR THE STARS-->
+<script>
+const canvas = document.getElementById("starsCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+const STAR_COUNT = 200;
+
+//CREATING THE STARS
+ for (let i = 0;i < STAR_COUNT; i++) {
+  stars.push({
+    x:Math.random()* canvas.width,
+    y:Math.random()*canvas.height,
+    radius:Math.random()*1.5,
+    speed:Math.random()*0.5 + 0.2
+  })
+ }
+ function animate(){
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "white";
+
+  for (let i = 0; i < stars.length;i++){
+    let s = stars[i];
+
+    ctx.beginPath();
+    ctx.arc(s.x,s.y, s.radius,0, Math.PI * 2);
+    ctx.fill();
+
+
+ s.y += s.speed;
+  if (s.y > canvas.height) {
+    s.y = 0;
+    s.x = Math.random() * canvas.width;
+  } 
+} 
+ requestAnimationFrame(animate);
+}
+ animate();
+ //
+ window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+ });
+</script> 
 </body>
 </html>
   

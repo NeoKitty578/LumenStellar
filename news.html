@@ -5,12 +5,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css.assets/infoscience.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
+<!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
   
   <nav>
+     <div class="logo">
+      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+    </div>
+
     <a href="home.html">Home</a>
     <a href="infoscience.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
@@ -19,45 +25,141 @@
     <a href="about.html">About</a>
   </nav>
 
-    <h1>News and Updates</h1>
-    <h2>Get your latest news on space events!</h2>
+    <h1 class="newstitle">News and Updates</h1>
+    <h2 class="newssubtitle">Get your latest news on space events!</h2>
 
   <main>
     <!--THESE ARE NEWS BOX-->
-   <div class="box">
-      <div>Scientists Discover New Earth-Like Exoplanet</div>
-      <p>Astronomers have identified a newly discovered exoplanet located within its star's habitable zone. Researchers believe the planet may contain 
-conditions that could support liquid water and possibly life.</p>
+    <div class="newscontainer">
+   <div class="newscard">
+      <h3>Scientists Discover New Earth-Like Exoplanet</h3>
+      <p>Astronomers have identified a newly discovered exoplanet located within its star's habitable zone. Researchers 
+         believe the planet may contain 
+         conditions that could support liquid water and possibly life.
+      </p>
    </div>
    
-   <div class="box">
-    <div>Massive Solar Storm Expected This Week</div>
-    <p>Space agencies are monitoring increased solar activity after powerful eruptions were detected on the Sun's surface. The storm could create strong auroras and temporarily affect satellite communications</p>
+   <div class="newscard">
+    <h3>Massive Solar Storm Expected This Week</h3>
+    <p>Space agencies are monitoring increased solar activity after powerful eruptions were detected on the Sun's surface. 
+      The storm could create strong auroras and temporarily affect satellite communications
+    </p>
    </div>
 
-   <div class="box">
-    <div>Mars Mission Preparations Continue</div>
-    <p>Engineers are currently testing advanced spacecraft technology for future human missions to Mars. Scientists hope these developments will help astronauts survive long-duration space travel safely.</p>
+   <div class="newscard">
+    <h3>Mars Mission Preparations Continue</h3>
+    <p>Engineers are currently testing advanced spacecraft technology for future human missions to Mars. Scientists 
+      hope these developments will help astronauts survive long-duration space travel safely.
+    </p>
    </div>
 
-   <div class="box">
-    <div>Webb Telescope Captures Stunning Deep Space Images</div>
-    <p>The James Webb Space Telescope continues to reveal breathtaking images of distant galaxies, nebulae, and star systems, giving scientists deeper insight into the origins of the universe</p>  
+   <div class="newscard">
+    <h3>Webb Telescope Captures Stunning Deep Space Images</h3>
+    <p>The James Webb Space Telescope continues to reveal breathtaking images of distant galaxies, 
+      nebulae, and star systems, giving scientists deeper insight into the origins of the universe
+    </p>
+    <div class="newsimg">
+    <img src="Images/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg" alt="purple galaxy">
+    </div> 
    </div>
 
-   <div class="box">
-    <div>Scientists Study Mysterious Black Hole Activity</div>
-    <p>Researchers have observed unusual energy bursts coming from a distant black hole system. The discovery may help scientists better understand how black holes absorb matter and release powerful radiation.</p>
+   <div class="newscard">
+    <h3>Scientists Study Mysterious Black Hole Activity</h3>
+    <p>Researchers have observed unusual energy bursts coming from a distant black hole system. 
+      The discovery may help scientists better understand how black holes absorb matter and release powerful radiation.
+    </p>
+   </div>
    </div>
    <!--END OF THE BOXES-->
-
-
+  
  
   </main>
 
   <footer>
-    <p>� 2026 Lumen-Stellar.Explore the universe </p>
-  </footer>
+     <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+          <h2>Lumen-Stellar</h2>
+          <p>
+            Explore planets, galaxies and the mysteries of the universe.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="infoscience.html">Explore</a>
+            <a href="quizzes.html">Quizzes</a>
+        </div>
 
+        <div class="footer-links" >
+          <h3>Resources:</h3>
+           <a href="news.html">News</a>
+           <a href="enquiries.html">Enquiries</a>
+           <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-links">
+         <h3>Connect</h3>
+         <div class="iconbar">
+           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="google"><i class="fa fa-google"></i></a>
+           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+         </div>
+        </div>
+      </div>
+      <hr>
+    <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
+  </footer>
+<!--ADDING THE JAVASCRIPT FOR THE STARS-->
+<script>
+const canvas = document.getElementById("starsCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+const STAR_COUNT = 200;
+
+//CREATING THE STARS
+ for (let i = 0;i < STAR_COUNT; i++) {
+  stars.push({
+    x:Math.random()* canvas.width,
+    y:Math.random()*canvas.height,
+    radius:Math.random()*1.5,
+    speed:Math.random()*0.5 + 0.2
+  })
+ }
+ function animate(){
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "white";
+
+  for (let i = 0; i < stars.length;i++){
+    let s = stars[i];
+
+    ctx.beginPath();
+    ctx.arc(s.x,s.y, s.radius,0, Math.PI * 2);
+    ctx.fill();
+
+
+ s.y += s.speed;
+  if (s.y > canvas.height) {
+    s.y = 0;
+    s.x = Math.random() * canvas.width;
+  } 
+} 
+ requestAnimationFrame(animate);
+}
+ animate();
+ //
+ window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+ });
+</script> 
 </body>
 </html>

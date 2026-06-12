@@ -5,10 +5,17 @@
  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="css.assets/infoscience.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
   <nav>
+    <div class="logo">
+      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+    </div>
+
     <a href="home.html">Home</a>
     <a href="infoscience.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
@@ -18,79 +25,175 @@
   </nav>
 <!--This is the history and about information behind the website-->
   <main>
+  <section class="aboutpage">
     <h2>History</h2>
-	<p>Lumen-Stellar was founded in early 2026 by a small group of astronomers who 
-     wanted to create a digital platform where people could learn and explore more about 
-      the universe and its vastness. The platform was designed to make astronomy more accessible and engaging for everyone, especially students and curious minds interested in galaxies, stars, black holes, planets, and the possibility of life beyond Earth. Through interactive articles, space news, educational content, and stunning visuals, Lumen-Stellar aims to inspire a deeper curiosity about the cosmos and encourage future generations to continue exploring the mysteries of the universe.
-</p>
- <img src = "images/akbar-nemati-C74Egy7es14-unsplash.jpg" alt  = "Two people looking at stars" width = 350 height = 300>
- 
-    <h2>About us:</h2>
+    <div class="historycontainer">
+     <div class="historytext">
+	     <p>Lumen-Stellar was founded in early 2026 by a small group of astronomers who 
+        wanted to create a digital platform where people could learn and explore more about 
+        the universe and its vastness. The platform was designed to make astronomy more accessible and engaging for everyone, especially students and curious minds interested in galaxies, stars, black holes, planets, and the possibility of life beyond Earth. Through interactive articles, space news, educational content, and stunning visuals, Lumen-Stellar aims to inspire a deeper curiosity about the cosmos and encourage future generations to continue exploring the mysteries of the universe.
+      </p>
+    </div>
 
+  <div class="historyimg">
+   <img src = "images/cash-macanaya-ts9-hrug7LE-unsplash.jpg" alt  = "Two people looking at stars" width = 350 height = 300>
+   
+  </div>
+ </div>
+  </section>
+
+
+
+<!--VISION AND MISSION SECTION-->
+ <section class="aboutpage">
+   <div class="visioncontainer">
+    <div class="visionbox">
     <h2>Vision:</h2>
-	<p>The vision of Lumen-Stellar is to inspire the next generation of astronomers, 
-astrophysicists, space scientists, cosmologists and innovators to pursue more knowledge about space.</p>
+	    <p>The vision of Lumen-Stellar is to inspire the next generation of astronomers, 
+       astrophysicists, space scientists, cosmologists and innovators to pursue more knowledge about space.
+      </p>
+    </div>  
+    <div class="missionbox">
     <h2>Mission:</h2>
-	<p>The mission of Lumen-Stellar is to make space science accessible for everyone
-by providing educational and interactive content about the universe.</p>
+	    <p>The mission of Lumen-Stellar is to make space science accessible for everyone
+        by providing educational and interactive content about the universe.
+      </p>
+    </div>
+   </div>
+ </section>
 
-<!--ABOUT US:-->
-<!--This is the contact information-->
-  <h2>Connect with us!</h2>
-<!--ADDING STICKY SOCIAL BAR-->
-<!--LOAD FONT AWESOME ICONS!-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--NOW FOR THE ICONS-->
-<div class="iconbar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="google"><i class="fa fa-google"></i></a>
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-  <!--ICONS END HERE-->
-<!--MEMBERS PROFILE-->
-</div>  
+
+<section class="aboutpage">
   <h2>Meet our members:</h2>
-  <div class="row">
-    <div class="coumn">
-      <div class="card">
-        <img src="Images/uifaces-popular-avatar (2).jpg" alt="christina" style="width: 30%;">
-        <div class="container"></div>
-        <h2>Christina Matthews</h2>
-        <p class="title">CEO &amp; Founder</p>
-        <p>Born at the heart of New York City and holds credentials from a premier institution known for excellence in astronomical sciences</p>
-        <p>christianMatt@gmail.com</p>
+  <div class="team-container">
+    <div class="team-card">
+      <div class="team-image">
+        <img src="Images/uifaces-popular-avatar (2).jpg" alt="christina">
+      </div>
+        <div class="team-info">
+        <h3>Christina Matthews</h3>
+        <p class="team-title">CEO &amp; Founder</p>
+        <p class="team-bio">Born at the heart of New York City and holds credentials from a premier institution known for excellence in astronomical sciences</p>
+        <p class="team-email">christianMatt@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
 
   
-  <div class="column">
-    <div class="card">
+  <div class="team-card">
+    <div class="team-image">
       <img src="Images/uifaces-human-avatar.jpg" alt="Kyujin" style="width: 100%;">
-      <div class="container">
-        <h2>Kyujin Han</h2>
-        <p class="title">Co-Founder</p>
-        <p>Received academic training from a globally esteemed cosmology program</p>
-        <p>kyujinchloehan@gmail.com</p>
+    </div>
+      <div class="team-info">
+        <h3>Kyujin Han</h3>
+        <p class="team-title">Co-Founder</p>
+        <p class="team-bio">Received academic training from a globally esteemed cosmology program</p>
+        <p class="team-email">kyujinchloehan@gmail.com</p>
         <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
- </div>
+ </section>
 
+<section class="aboutpage">
   <h2>Our members:</h2>
-  <img src="Images/uifaces-popular-avatar.jpg" alt="Avatar" class="avatar">
-  <img src="Images/uifaces-popular-avatar (1).jpg" alt="Avatar" class="avatar">
-  <img src="Images/uifaces-popular-avatar (2).jpg" alt="Avatar" class="avatar">
-  <img src="Images/uifaces-popular-avatar (3).jpg" alt="Avatar" class="avatar">
-
+  <div class="members-avatars">
+    <img src="Images/uifaces-popular-avatar.jpg" alt="Avatar" class="avatar">
+    <img src="Images/uifaces-popular-avatar (1).jpg" alt="Avatar" class="avatar">
+    <img src="Images/uifaces-popular-avatar (2).jpg" alt="Avatar" class="avatar">
+    <img src="Images/uifaces-popular-avatar (3).jpg" alt="Avatar" class="avatar">
+  </div>
   </main>
+</section>
+
+
 
   <footer>
-    <p> 2026 Lumen-Stellar.Explore the universe </p>
-  </footer>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+          <h2>Lumen-Stellar</h2>
+          <p>
+            Explore planets, galaxies and the mysteries of the universe.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="infoscience.html">Explore</a>
+            <a href="quizzes.html">Quizzes</a>
+        </div>
 
+        <div class="footer-links" >
+          <h3>Resources:</h3>
+           <a href="news.html">News</a>
+           <a href="enquiries.html">Enquiries</a>
+           <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-links">
+         <h3>Connect</h3>
+         <div class="iconbar">
+           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="google"><i class="fa fa-google"></i></a>
+           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+         </div>
+        </div>
+      </div>
+      <hr>
+    <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
+  </footer>
+<!--ADDING THE JAVASCRIPT FOR THE STARS-->
+<script>
+const canvas = document.getElementById("starsCanvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+const STAR_COUNT = 200;
+
+//CREATING THE STARS
+ for (let i = 0;i < STAR_COUNT; i++) {
+  stars.push({
+    x:Math.random()* canvas.width,
+    y:Math.random()*canvas.height,
+    radius:Math.random()*1.5,
+    speed:Math.random()*0.5 + 0.2
+  })
+ }
+ function animate(){
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "white";
+
+  for (let i = 0; i < stars.length;i++){
+    let s = stars[i];
+
+    ctx.beginPath();
+    ctx.arc(s.x,s.y, s.radius,0, Math.PI * 2);
+    ctx.fill();
+
+
+ s.y += s.speed;
+  if (s.y > canvas.height) {
+    s.y = 0;
+    s.x = Math.random() * canvas.width;
+  } 
+} 
+ requestAnimationFrame(animate);
+}
+ animate();
+ //
+ window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+ });
+</script> 
 </body>
 </html>

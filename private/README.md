@@ -31,6 +31,23 @@ added padding to the footer
 Added members profile by the about page
 added more quizzes
 
+Things i have changed since submitting Part 2:
+Perfomed testing again to make sure everything is in place
+Navigation improved
+hero section ammended
+added more css for enhancement
+added responsive design
+added javascript for the stars
+added css for the stars
+added my logo
+addded more pseduclasses for the about page to modify the css
+removed the google form
+added a planet
+ammended the about page
+i finished all the open slots i had in my explore page
+
+
+
 
 
 Sitemap:

@@ -6,12 +6,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css.assets/infoscience.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
+
 <div class="stars-bg" id="starsContainer"></div>
 
   <nav>
+     <div class="logo">
+      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+    </div>
+
     <a href="home.html">Home</a>
     <a href="infoscience.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
@@ -22,15 +30,98 @@
 
   <h1>Lumen-Stellar</h1>
   <h2>This is the enquiries section, filling the the form would help us improve a lot!</h2>
-  <h3>Please fill in the form below</h3>
-  <main>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfajM8vBoOGReNxKYR43QwYw_XReklRrHZQHhG3eArw4KzX8A/viewform?embedded=true" width="640" height="949" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </main>
+<main>
+
+  <iframe src="https://form.typeform.com/to/avon6CQ3" width="100%" height="600" frameborder="0"
+    style="border: none; border-radius: 20px;"></iframe>
+</main>
   
    <footer>
-    <p>© 2026 Lumen-Stellar.Explore the universe </p>
+     <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
+          <h2>Lumen-Stellar</h2>
+          <p>
+            Explore planets, galaxies and the mysteries of the universe.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Explore</h3>
+            <a href="home.html">Home</a>
+            <a href="infoscience.html">Explore</a>
+            <a href="quizzes.html">Quizzes</a>
+        </div>
+
+        <div class="footer-links" >
+          <h3>Resources:</h3>
+           <a href="news.html">News</a>
+           <a href="enquiries.html">Enquiries</a>
+           <a href="about.html">About</a>
+        </div>
+
+        <div class="footer-links">
+         <h3>Connect</h3>
+         <div class="iconbar">
+           <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+           <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+           <a href="#" class="google"><i class="fa fa-google"></i></a>
+           <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+           <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+         </div>
+        </div>
+      </div>
+      <hr>
+    <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
   </footer>
  
+<!--ADDING THE JAVASCRIPT FOR THE STARS-->
+<script>
+const canvas = document.getElementById("starsCanvas");
+const ctx = canvas.getContext("2d");
 
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let stars = [];
+
+const STAR_COUNT = 200;
+
+//CREATING THE STARS
+ for (let i = 0;i < STAR_COUNT; i++) {
+  stars.push({
+    x:Math.random()* canvas.width,
+    y:Math.random()*canvas.height,
+    radius:Math.random()*1.5,
+    speed:Math.random()*0.5 + 0.2
+  })
+ }
+ function animate(){
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = "white";
+
+  for (let i = 0; i < stars.length;i++){
+    let s = stars[i];
+
+    ctx.beginPath();
+    ctx.arc(s.x,s.y, s.radius,0, Math.PI * 2);
+    ctx.fill();
+
+
+ s.y += s.speed;
+  if (s.y > canvas.height) {
+    s.y = 0;
+    s.x = Math.random() * canvas.width;
+  } 
+} 
+ requestAnimationFrame(animate);
+}
+ animate();
+ //
+ window.addEventListener("resize", () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+ });
+</script> 
 </body>
 </html>
