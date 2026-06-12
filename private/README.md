@@ -24,6 +24,12 @@ The CSS contains background colors, i have my own pseudoclasses, there's hover e
 I added way more pictures since i have added new informatinon, they have their own pictures to fit the aesthetics
 I have added the meta... to fit for any screensize for my pages.
 I have used html or added html symbols such as the copywright symbol
+Added social media icons
+added members and their pictures
+Added buttons for the home page as well as their css
+added padding to the footer
+Added members profile by the about page
+added more quizzes
 
 
 
@@ -61,4 +67,6 @@ UCO/Lick Observatory. (2011) Stellar structure and evolution. Available at: http
 BBC. (2026). The life cycle of a star – AQA. The formation and life cycle of stars. Available at: https://www.bbc.co.uk/bitesize/guides/zpxv97h/revision/1 (Accessed at:18 April 2026)
 
 US National Science Foundation (2023) 5 black hole facts to blow your mind.Available at: https://www.nsf.gov/science-matters/5-black-hole-facts-blow-your-mind#:~:text=Scientists%20believe%20there%20are%20four%20kinds%20of,and%20emerged%20soon%20after%20the%20Big%20Bang (18 April 2026)
+
+Luginsland, T. (2022)A man in a suit posing for a picture. Available at: https://unsplash.com/photos/a-man-in-a-suit-posing-for-a-picture-bbOOTiq-EPA (Accessed:28/05/2026)
 
