@@ -2,7 +2,6 @@
 A space information website
 
 Student information
-Student nr: ST10507528
 Neo Lebea
 
 Project overview:
