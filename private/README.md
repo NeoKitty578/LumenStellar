@@ -47,7 +47,141 @@ ammended the about page
 i finished all the open slots i had in my explore page
 
 
+  <h2>What is a Black hole </h2>
+  <ul>
+  <li>A giant planet</li>
+  <li>A region with gravity so strong nothing escapes</li>
+  <li>A star that shines brightly</li>
+  </ul>
+  <!--This is the drop down where I'll reveal the answer-->
+  <details>
+    <summary>Reveal answer</summary>
+	<p>B.A region with gravity so strong nothing escapes</p>
+  </details>
+  
+  <h2>What forms most black holes?</h2>
+  <ul>
+  <li>Exploding planets</li>
+  <li>Collapse massive stars</li>
+  <li>Frozen comets</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+	<p>B.A region with gravity so strong nothing escapes</p>
+  </details>
+  
+<!--Exoplanets-->
+  <h2>What is an exoplanet?</h2>
+  <ul>
+  <li>A planet in our solar system</li>
+  <li>A planet outside our solar system</li>
+  <li>A moon orbiting the earth</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+	<p>B.A planet outside our solar system</p>
+  </details>
 
+  <h2>How do scientists often detect exoplanets?</h2>
+  <ul>
+  <li>By touching them</li>
+  <li>By observing star light changes</li>
+  <li>Sound waves</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+	<p>B.by observing star light changes</p>
+  </details>
+  
+<!--Astrobiology-->
+ <h2>What is an exoplanet?</h2>
+  <ul>
+  <li>A planet in our solar system</li>
+  <li>A planet outside our solar system</li>
+  <li>A moon orbiting the earth</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+	<p>B.A planet outside our solar system</p>
+  </details>
+
+  <!--More random quizzes-->
+  <h2>What is one reason exoplanets are difficult to detect?</h2>
+  <ul>
+    <li>A.They are too cold</li>
+    <li>B.They are extremely bright</li>
+    <li>C.They are far away and too hard to see</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p>C.They are far away and too hard to see</p>
+  </details>
+
+    <h2>Which method detects a planet when a star becomes slightly dimmer?</h2>
+  <ul>
+    <li>A.Transit method</li>
+    <li>B.Direct imaging</li>
+    <li>C.Gravitational microlensing</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p>A.Transit method</p>
+  </details>
+
+    <h2>In the transit method, what happens when a planet passes in front of a star?</h2>
+  <ul>
+    <li>A.The star explodes</li>
+    <li>B.The star becomes slightly dimmer</li>
+    <li>C.The planet disappears</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p>>B.The star becomes slightly dimmer</p>
+  </details>
+
+    <h2>Which method is described as the most famous method?</h2>
+  <ul>
+    <li>A.</li>
+    <li>B.</li>
+    <li>C.</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p></p>
+  </details>
+
+    <h2>What causes a star to wobble in the radial velocity method?</h2>
+  <ul>
+    <li>A.</li>
+    <li>B.</li>
+    <li>C.</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p></p>
+  </details>
+
+    <h2>Which scientific effect helps detect the wobbling of a star?</h2>
+  <ul>
+    <li>A.</li>
+    <li>B.</li>
+    <li>C.</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p></p>
+  </details>
+
+    <h2>The radial velocity method helps scientists determine a planet’s:</h2>
+  <ul>
+    <li>A.Colour and temperature</li>
+    <li>B. Mass and orbit</li>
+    <li>C. Shape and atmostphere</li>
+  </ul>
+  <details>
+    <summary>Reveal answer</summary>
+    <p>B. Mass and orbit</p>
+  </details>
 
 
 Sitemap:

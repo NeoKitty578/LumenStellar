@@ -9,202 +9,48 @@
 </head>
 
 <body>
-<!--ADDING STARS-->
-  <canvas id="starsCanvas"></canvas>
-  <nav>
-     <div class="logo">
-      <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
-    </div>
-    <a href="home.html">Home</a>
-    <a href="infoscience.html">Explore</a>
-    <a href="quizzes.html">Quizzes</a>
-    <a href="news.html">News</a>
-    <a href="enquiries.html">Enquiries</a>
-    <a href="about.html">About</a>
-  </nav>
+<nav class="quiz-nav">
+  <div class="logo"><img src="Images/LUMEN-STELLAR (1).png" alt="logo></div>
+  <a href="home.html">Home</a>
+  <a href="infoscience.html">Explore</a>
+  <a href="quizzes.html">Quizzes</a>
+  <a href="news.html">News</a>
+  <a href="enquiries.html">Enquiries</a>
+  <a href="about.html">About</a>
 
-  <section class="challenge">
+  <main>
+     <!--title-->
+     <section class="quiz-hero">
+      <h1>Space Quiz</h1>
+      <p>Can you score 10/10 and prove you're a space genuis</p>
+     </section>
 
-    <h2>Space challenge!</h2>
-    <p>
-      Can you score 10/10 and prove you're a space genius?
-    </p>
-  </section>
-  <div class="quiz-hero">
-  <img src = "images/robynne-o-HOrhCnQsxnQ-unsplash.jpg" alt  = "Tech lights" width = 400 height = 300>
-  </div>
-  <!--BLACK HOLE QUIZ-->
-  <div class="quiz-card">
-  <h2 class="quiz-question">What is a Black hole </h2>
-  <ul>
-  <li>A giant planet</li>
-  <li>A region with gravity so strong nothing escapes</li>
-  <li>A star that shines brightly</li>
-  </ul>
-  <!--This is the drop down where I'll reveal the answer-->
-  <details>
-    <summary>Reveal answer</summary>
-	<p>B.A region with gravity so strong nothing escapes</p>
-  </details>
-  
-  <h2 class="quiz-question">What forms most black holes?</h2>
-  <ul>
-  <li>Exploding planets</li>
-  <li>Collapse massive stars</li>
-  <li>Frozen comets</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-	<p>B.A region with gravity so strong nothing escapes</p>
-  </details>
-  
-<!--Exoplanets-->
-  <h2 class="quiz-question">What is an exoplanet?</h2>
-  <ul>
-  <li>A planet in our solar system</li>
-  <li>A planet outside our solar system</li>
-  <li>A moon orbiting the earth</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-	<p>B.A planet outside our solar system</p>
-  </details>
+     <!--Quiz block-->
+     <section class="quiz-section">
+      <div class="quiz-wrapper">
+        <div class="quiz-meta">Question 1 of 5</div>
+        <div class="quiz-card">
+          <h3 class="quiz question">How do scientists often detect exoplanets?</h3>
+           <ul class="options">
+            <li><label><input type="radio" name="q1" value="By touching them"></label></li>
+            <li><label><input type="radio" name="q1" value="Sound waves"></label></li>
+            <li><label><input type="radio" name="q1" value="By observing star light changes"></label></li>
+           </ul>
 
-  <h2 class="quiz-question">How do scientists often detect exoplanets?</h2>
-  <ul>
-  <li>By touching them</li>
-  <li>By observing star light changes</li>
-  <li>Sound waves</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-	<p>B.by observing star light changes</p>
-  </details>
-  
-<!--Astrobiology-->
- <h2 class="quiz-question">What is an exoplanet?</h2>
-  <ul>
-  <li>A planet in our solar system</li>
-  <li>A planet outside our solar system</li>
-  <li>A moon orbiting the earth</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-	<p>B.A planet outside our solar system</p>
-  </details>
+           <div class="quiz-actions">
+            <button class="secondary">Previous</button>
+            <button class="primary">Next</button>
+           </div>
 
-  <!--More random quizzes-->
-  <h2 class="quiz-question">What is one reason exoplanets are difficult to detect?</h2>
-  <ul>
-    <li>A.They are too cold</li>
-    <li>B.They are extremely bright</li>
-    <li>C.They are far away and too hard to see</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>C.They are far away and too hard to see</p>
-  </details>
+        </div>
+      </div>
+     </section>
+  </main>
 
-    <h2 class="quiz-question">Which method detects a planet when a star becomes slightly dimmer?</h2>
-  <ul>
-    <li>A.Transit method</li>
-    <li>B.Direct imaging</li>
-    <li>C.Gravitational microlensing</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>A.Transit method</p>
-  </details>
-
-    <h2 class="quiz-question">In the transit method, what happens when a planet passes in front of a star?</h2>
-  <ul>
-    <li>A.The star explodes</li>
-    <li>B.The star becomes slightly dimmer</li>
-    <li>C.The planet disappears</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>>B.The star becomes slightly dimmer</p>
-  </details>
-
-    <h2 class="quiz-question">Which method is described as the most famous method?</h2>
-  <ul>
-    <li>A.</li>
-    <li>B.</li>
-    <li>C.</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p></p>
-  </details>
-
-    <h2 class="quiz-question">What causes a star to wobble in the radial velocity method?</h2>
-  <ul>
-    <li>A.</li>
-    <li>B.</li>
-    <li>C.</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p></p>
-  </details>
-
-    <h2 class="quiz-question">Which scientific effect helps detect the wobbling of a star?</h2>
-  <ul>
-    <li>A.</li>
-    <li>B.</li>
-    <li>C.</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p></p>
-  </details>
-
-    <h2 class="quiz-question">The radial velocity method helps scientists determine a planet’s:</h2>
-  <ul>
-    <li>A.Colour and temperature</li>
-    <li>B. Mass and orbit</li>
-    <li>C. Shape and atmostphere</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>B. Mass and orbit</p>
-  </details>
-
-    <h2 class="quiz-question">Which method is considered quite rare?</h2>
-  <ul>
-    <li>A.Transit method</li>
-    <li>B.Direct imaging</li>
-    <li>C.Radical velocity method</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>B.Direct imaging</p>
-  </details>
-
-    <h2 class="quiz-question">Direct imaging is mostly used for:</h2>
-  <ul>
-    <li>A.Tiny rocky planets</li>
-    <li>B.Giant planets</li>
-    <li>C.Dead stars</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>B.Giant planets</p>
-  </details>
-
-    <h2 class="quiz-question">What does gravitational microlensing use as a lens?</h2>
-  <ul>
-    <li>A.Water</li>
-    <li>B.Gravity</li>
-    <li>C.Clouds</li>
-  </ul>
-  <details>
-    <summary>Reveal answer</summary>
-    <p>B.Gravity</p>
-  </details>
-  </div>
  
+</nav>
+
+  <!--FOOTER-->
    <footer>
      <div class="footer-grid">
         <div class="footer-brand">
@@ -241,7 +87,8 @@
       </div>
       <hr>
     <p class="copyright">© 2026 Lumen-Stellar. Explore the universe.</p>
-  </footer>
+  </footer> 
+  
 <!--ADDING THE JAVASCRIPT FOR THE STARS-->
 <script>
 const canvas = document.getElementById("starsCanvas");
