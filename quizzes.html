@@ -18,20 +18,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css.assets/infoscience.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="icon" type="image/png" href="Images/LUMEN-STELLAR (1).png">
+  <link rel="icon" type="image/png" href="Images/LUMEN-STELLAR (1).png">
+  <!--script from JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js_assets/quiz.js"></script>
 </head>
 
 <body>
+  <!--ADDING STARS-->
+  <canvas id="starsCanvas"></canvas>
 <nav class="quiz-nav">
   <div class="logo">
     <img src="Images/LUMEN-STELLAR (1).png" alt="Logo">
   </div>
   <a href="index.html">Home</a>
-  <a href="infoscience.html">Explore</a>
+  <a href="galactic_information.html">Explore</a>
   <a href="quizzes.html">Quizzes</a>
-  <a href="news.html">News</a>
+  <a href="space_news.html">News</a>
   <a href="enquiries.html">Enquiries</a>
-  <a href="about.html">About</a>
+  <a href="about.html">About</a> 
+</nav>
 
   <main>
      <!--title-->
@@ -43,13 +49,37 @@
      <!--Quiz block-->
      <section class="quiz-section">
       <div class="quiz-wrapper">
-        <div class="quiz-meta">Question 1 of 5</div>
+
+        <div class="quiz-meta">
+          <span id ="qNumber">1</span> of 5
+        </div>
+
         <div class="quiz-card">
-          <h3 class="quiz question">How do scientists often detect exoplanets?</h3>
+          <h3 class="quiz-question">
+            How do scientists often detect exoplanets?
+          </h3>
+
            <ul class="options">
-            <li><label><input type="radio" name="q1" value="By touching them"></label></li>
-            <li><label><input type="radio" name="q1" value="Sound waves"></label></li>
-            <li><label><input type="radio" name="q1" value="By observing star light changes"></label></li>
+            <li>
+              <label>
+                <input type="radio" name="q1" value="touch">
+                By touching them
+              </label>
+            </li>
+
+            <li>
+              <label>
+                <input type="radio" name="q1" value="waves">
+                Sound waves
+              </label>
+            </li>
+
+            <li>
+              <label>
+                <input type="radio" name="q1" value="star">
+                By observing star light changes
+              </label>
+            </li>
            </ul>
 
            <div class="quiz-actions">
@@ -61,9 +91,6 @@
       </div>
      </section>
   </main>
-
- 
-</nav>
 
   <!--FOOTER-->
    <footer>
@@ -78,13 +105,13 @@
         <div class="footer-links">
           <h3>Explore</h3>
             <a href="index.html">Home</a>
-            <a href="infoscience.html">Explore</a>
+            <a href="galactic_information.html">Explore</a>
             <a href="quizzes.html">Quizzes</a>
         </div>
 
         <div class="footer-links" >
           <h3>Resources:</h3>
-           <a href="news.html">News</a>
+           <a href="space_news.html">News</a>
            <a href="enquiries.html">Enquiries</a>
            <a href="about.html">About</a>
         </div>
