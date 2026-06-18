@@ -1,84 +1,99 @@
-const quizData = [
-    {
-        question: "How do scientists often detect exoplanets?",
-        answers: [
-        "By touching them",
-        "Sound waves",
-        "By observing star light changes"
-    ],
-    correct : 2
-    },
-    {
-        question: "What is the largest planet in our Solar System?",
-        answers: [
-        "Mars",
-        "Jupiter",
-        "Earth"
-    ],
-    correct: 1
-    },
-    {
-      question: "Which galaxy contains Earth?",
-      answers: [
-        "Andromeda",
-        "Milky Way",
-        "Whirlpool" 
-      ],
-      correct:1     
-    }
+const questions = [
+{
+question:"How do scientists often detect exoplanets?",
+answers:[
+"By touching them",
+"Sound waves",
+"By observing star light changes"
+],
+correct: 2
+},
+{
+question:"Which planet is known as the Red Planet?",
+answers:["Jupiter","Mars","Saturn"],
+correct: 1
+},
+{
+question:"What is the largest planet in our Solar System?",
+answers:["Earth","Jupiter","Venus"],
+correct: 1
+},
+{
+question:"What telescope captured deep space images?",
+answers:["James Webb Telescope","Newton Telescope","Galileo Telescope"],
+correct: 0
+},
+{
+question:"What is a black hole?",
+answers:[
+"A moon",
+"A region where gravity is extremely strong",
+"A comet"
+],
+correct: 1
+}
 ];
 
 let currentQuestion = 0;
 let score = 0;
+let answered = false;
 
-function loadQuestion(){
-    //using JQuery functions
-    $("#questionNumber").text(currentQuestion + 1);
+const questionText = document.getElementById("questionText");
+const answerOptions = document.getElementById("answerOptions");
+const qNumber = document.getElementById("qNumber");
 
-    $("#question").text(
-        quizData[currentQuestion].question
-    );
+const nextBtn = document.getElementById("NextBtn");
+const prevBtn = document.getElementById("PrevBtn");
+nextBtn.addEventListener("click",nextQuestion);
+prevBtn.addEventListener("click",prevQuestion);
 
-    let options = "";
+function loadQuestion() {
 
- $.each(
-        quizData[currentQuestion].answers,
-        function(index, answer) {
+qNumber.textContent = currentQuestion + 1;
 
-            options += `
-                <label>
-                    <input type="radio"
-                           name="answer"
-                           value="${index}">
-                    ${answer}
-                </label>
-                <br><br>
-            `;
-        }
-    );
-    $("#nextbtn").click(function(){
-        let selected = $("input[name='answer']:checked").val();
-        if (selected === undefined){
-           alert("Please select an answer.");
-           return;            
-        }
-        if (Number(Selected)=== quizData[currentQuestion].correct){
-            score++;
-        }
-        currentQuestion++;
+questionText.textContent = questions[currentQuestion].question;
 
-        if (currentQuestion < quizData.length){
-            loadQuestion();
-        } else{
-            $(".quiz-card").html(`
-                <h2>Quiz Complete!</h2>
-                <p>You scored ${score} out of ${quizData.length}</p>
-                `);
-        }
-    }); 
-    
-    $(document).ready(function() {
-    loadQuestion();
-});  
+answerOptions.innerHTML = "";
+
+questions[currentQuestion].answers.forEach(answer => {
+answerOptions.innerHTML += `
+<li>
+<label>
+<input type="radio" name="answer" value="${answer}">
+${answer}
+</label>
+</li>
+`;
+});
 
 }
+
+function nextQuestion() {
+
+const selected = document.querySelector('input[name="answer"]:checked');
+
+if (!selected) {
+alert("Select an answer first.");
+return;
+}
+
+if (currentQuestion < questions.length - 1) {
+currentQuestion++;
+loadQuestion();
+} else {
+questionText.textContent = "Quiz Complete!";
+answerOptions.innerHTML = "<p>Done 🚀</p>";
+document.getElementById("nextBtn").disabled = true;
+document.getElementById("prevBtn").disabled = true;
+}
+
+}
+
+function prevQuestion() {
+if (currentQuestion > 0) {
+currentQuestion--;
+loadQuestion();
+}
+}
+
+loadQuestion();

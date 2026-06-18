@@ -19,14 +19,13 @@
   <link rel="stylesheet" href="css.assets/infoscience.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="Images/LUMEN-STELLAR (1).png">
-  <!--script from JQuery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js_assets/quiz.js"></script>
 </head>
+
 
 <body>
   <!--ADDING STARS-->
   <canvas id="starsCanvas"></canvas>
+
 <nav class="quiz-nav">
   <div class="logo">
     <img src="Images/LUMEN-STELLAR (1).png" alt="Logo">
@@ -43,7 +42,9 @@
      <!--title-->
      <section class="quiz-hero">
       <h1>Space Quiz</h1>
-      <p>Can you score 10/10 and prove you're a space genuis</p>
+      <div class="contact-section">
+      <p>Can you score 5/5 and prove you're a space genuis?</p>
+      </div>
      </section>
 
      <!--Quiz block-->
@@ -55,36 +56,36 @@
         </div>
 
         <div class="quiz-card">
-          <h3 class="quiz-question">
+          <h3 class="quiz-question" id="questionText">
             How do scientists often detect exoplanets?
           </h3>
 
-           <ul class="options">
+           <ul class="options" id="answerOptions">
             <li>
               <label>
-                <input type="radio" name="q1" value="touch">
+                <input type="radio" name="answer" value="touch">
                 By touching them
               </label>
             </li>
 
             <li>
               <label>
-                <input type="radio" name="q1" value="waves">
+                <input type="radio" name="answer" value="waves">
                 Sound waves
               </label>
             </li>
 
             <li>
               <label>
-                <input type="radio" name="q1" value="star">
+                <input type="radio" name="answer" value="star">
                 By observing star light changes
               </label>
             </li>
            </ul>
 
            <div class="quiz-actions">
-            <button class="secondary">Previous</button>
-            <button class="primary">Next</button>
+            <button class="secondary" id="prevBtn">Previous</button>
+            <button class="primary" id="nextBtn">Next</button>
            </div>
 
         </div>
@@ -179,6 +180,8 @@ const STAR_COUNT = 200;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
  });
-</script>  
+</script>
+
+<script src="js.assets/quiz.js"></script>  
 </body>
 </html>

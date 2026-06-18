@@ -976,3 +976,23 @@ body, main, nav {
   height: 50px;
  }
 }
+
+/*CONTACT INFROMATION*/
+.contact-section{
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #bfcbe2;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section p{
+  margin: 6px 0;
+  color: rgba(3, 9, 36, 0.9);
+}
+
+.contact-section h2{
+  margin-bottom: 10px;
+  color: #00051a;
+}
