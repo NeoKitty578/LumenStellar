@@ -48,18 +48,15 @@ nextBtn.addEventListener("click",nextQuestion);
 prevBtn.addEventListener("click",prevQuestion);
 
 function loadQuestion() {
-
+ answered = false;
 qNumber.textContent = currentQuestion + 1;
-
 questionText.textContent = questions[currentQuestion].question;
-
 answerOptions.innerHTML = "";
-
 questions[currentQuestion].answers.forEach(answer => {
 answerOptions.innerHTML += `
 <li>
 <label>
-<input type="radio" name="answer" value="${answer}">
+<input type="radio" name="answer" value="${index}">
 ${answer}
 </label>
 </li>
@@ -76,18 +73,26 @@ if (!selected) {
 alert("Select an answer first.");
 return;
 }
+ if(!answered){
+    if (parseInt(selected.value) === questions[currentQuestion].correct){
+        score++;
+    }
+    answered = true;
+ }
 
 if (currentQuestion < questions.length - 1) {
 currentQuestion++;
 loadQuestion();
 } else {
-questionText.textContent = "Quiz Complete!";
-answerOptions.innerHTML = "<p>Done 🚀</p>";
-document.getElementById("nextBtn").disabled = true;
-document.getElementById("prevBtn").disabled = true;
+    showresult();
+
+//questionText.textContent = "Quiz Complete!";
+//answerOptions.innerHTML = "<p>Done 🚀</p>";
+//document.getElementById("nextBtn").disabled = true;
+//document.getElementById("prevBtn").disabled = true;
+}
 }
 
-}
 
 function prevQuestion() {
 if (currentQuestion > 0) {
@@ -95,5 +100,11 @@ currentQuestion--;
 loadQuestion();
 }
 }
+ function showResult(){
+    questionsText.textContent = `Quiz complete! Score: ${score} / ${questions.length}`;
+    answerOptions.innerHTML = "";
+    nextBtn.style.display = "none"
+    prevBtn.style.display = "none"
 
-loadQuestion();
+ }
+oadQuestion();
