@@ -220,3 +220,13 @@ US National Science Foundation (2023) 5 black hole facts to blow your mind.Avail
 
 Luginsland, T. (2022)A man in a suit posing for a picture. Available at: https://unsplash.com/photos/a-man-in-a-suit-posing-for-a-picture-bbOOTiq-EPA (Accessed:28/05/2026)
 
+//new references
+Miranda, J.(2022) [Image] Available at: https://unsplash.com/photos/a-planet-in-space-kBU5APay4T0 (Accessed: 17 June 2026)
+
+Bloomfield, M (2023) [Image] Available at: https://unsplash.com/photos/a-sculpture-with-balls-on-top-of-it-p8JbzOUwdjg (Accessed : 17 June 2026)
+
+Badun, A (2023) [Images] Available at: https://unsplash.com/photos/a-museum-display-with-a-large-blue-ball-on-display-x_X6-3mNb58 (Accessed: 17 June 2026)
+
+Dmitrii, E (2024) [Images] Available at: https://unsplash.com/photos/a-blue-light-is-shining-on-a-machine-w8PUaEXkSgw (Accessed: 17 June 2026)
+
+Wang, C (2022) [Images] Available at: https://unsplash.com/photos/a-view-of-the-earth-from-space-OCe8cTGymSQ (Accessed: 17 June 2026)
