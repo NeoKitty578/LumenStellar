@@ -999,14 +999,14 @@ body, main, nav {
 
 /*for the responsive nav*/
 .topnav{
-  background-color: #00051a;
+  background-color: #050816;
   overflow: hidden;
 }
 
 .topnav a{
   float: left;
   display: block;
-  color: #007bb5;
+  color: #f0f2f3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -1014,11 +1014,11 @@ body, main, nav {
 }
 
 .topnav a:hover{
-  background-color: #00051a;
-  color: #55ACEE;
+  background-color: #091224;
+  color: #b2b3c2;
 }
 .topnava.active{
-  background-color: #050c46;
+  background-color: bisque;
   color: wheat;
 }
 .topnav .icon{
@@ -1047,4 +1047,48 @@ body, main, nav {
     display: block;
     text-align: left;
   }
+}
+.space-form-container{
+  background: #050816;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 400px;
+  margin: 20 px auto;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 15px rgba(74, 74, 226, 0.3);
+}
+ .form-group input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #334155;
+  border-radius:  4px;
+  background: #0f172a;
+  color: white;
+  box-sizing: border-box;
+ }
+
+.form-group input:focus{
+  outline: none;
+  border-color: #38bdf8;
+}
+button{
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: wheat;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+button:hover{
+  background:#1d4ed8;
+}
+#formSuccessMessage{
+  text-align: center;
+  color: #4ade80;
 }
