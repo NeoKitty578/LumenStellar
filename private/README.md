@@ -10,16 +10,23 @@ Lumen-Stellar is an information website about space and the galaxy. It is a digi
 Website goals:
 The goal of the website is to provide valuable information and engages with users, through quizzes and polls. To inspire STEM careers for future scientists, astronomers, astrophysicists, and astronauts. To build a community of space enthusiasts, things like the comment section, forums or even social links.
 
-Timeline and Milestones:
-Part1 will be done right before the 20 April 2026, which is the proposal and the html for the website. The Part 2, this is the CSS will be done before the 29 of May 2026. Then the last part of the website, which is the JavaScript, will be done before the 19nth of June 2026.
-
-
-
-  
-  
-
-   
-
+Mission
+The mission of Lumen-Stellar is to make space science accessible for everyone by providing educational and interactive content about the universe.
+Vision
+The vision of Lumen-Stellar is to inspire the next generation of astronomers, astrophysicists, space scientists, cosmologists and innovators to pursue more knowledge about space.
+Target audience
+•	Teens and adults who are interested in astronomy and space.
+•	Space nerds
+•	Fans of sci-fi and NASA content
+•	Curious minds who wonder how the universe works
+•	Future astronauts, astronomers and scientists.
+Website goals
+The goal of the website is to provide valuable information and engages with users, through quizzes and polls. To inspire STEM careers for future scientists, astronomers, astrophysicists, and astronauts. To build a community of space enthusiasts, things like the comment section, forums or even social links. Showcasing space events like The Apollo, like “On this day…”
+•	People to visit my site
+•	People to engage with content
+•	People to explore the topics
+•	People to like the site enough to visit it again
+•	People to enjoy the site and its content.
 
 Sitemap:
 ![alt text](image.png)

@@ -19,6 +19,7 @@ as well as the lightbox
 ###REMOVED
 removed a planet from index
 removed the contact buttons from the about page
+removed social media icons
 
 
 
