@@ -1,3 +1,23 @@
+###ADDED
+added my logo
+added slideshow by the news page
+added a map
+added javascript for the quiz page
+added javascript to the news page
+added contact information to the about page
+added javascript for the stars
+added css for the stars
+
+###CHANGED
+changed google form to a typeform
+
+###FIXED
+Navigation improved and made it responsive to mobile
+
+###REMOVED
+removed a planet from index
+removed the contact buttons from the about page
+
 Things i have changed after the first submission (Part 1):
 -I have updated the timeline on my proposal 1
 -I added more under the dropdowns, i even added more of the dropdowns
@@ -21,7 +41,6 @@ Navigation improved
 hero section ammended
 added more css for enhancement
 added responsive design
-added javascript for the stars
 added css for the stars
 added my logo
 addded more pseduclasses for the about page to modify the css
@@ -30,7 +49,7 @@ added a planet
 ammended the about page
 i finished all the open slots i had in my explore page
 added contact information
-added javascript for the quiz page
+
 added a map
 added a changelog and moved all the updates i temporarily made there to the changelog
 added slideshow by the news page

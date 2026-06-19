@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css.assets/infoscience.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="icon" type="image/png" href="Images/LUMEN-STELLAR (1).png">
- <script src="js.assets/news.js" defer></script>
+ 
 </head>
 
 <body>
@@ -30,13 +30,18 @@
      <div class="logo">
       <img src="Images/LUMEN-STELLAR (1).png" alt="logo">
     </div>
-
+  <div class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
     <a href="galactic_information.html">Explore</a>
     <a href="quizzes.html">Quizzes</a>
     <a href="space_news.html">News</a>
     <a href="enquiries.html">Enquiries</a>
     <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class ="fa fa-bars"></i>
+    </a>
+  </div>
+
   </nav>
 
     <h1 class="newstitle">News and Updates</h1>
@@ -204,6 +209,8 @@ const STAR_COUNT = 200;
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
  });
-</script> 
+</script>
+<script src="js.assets/news.js" defer></script>
+<script src="js.assets/responsivejava.js"></script>
 </body>
 </html>
